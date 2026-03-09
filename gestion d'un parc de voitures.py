@@ -26,8 +26,16 @@ class Parc:
     def calculerNbrPlaceslibres(self):
         return self.capacite - len(self.liste_voitures)
 parc = Parc(1,"Montreal",3)
-voiture = Voiture("Toyota","BB111","Rouge")
-voiture = Voiture("Honda","AA222","Bleu")
+voiture1 = Voiture("Toyota","BB111","Rouge")
+voiture2 = Voiture("Honda","AA222","Bleu")
+parc.entrerVoiture(voiture1)
+parc.entrerVoiture(voiture2)
+print("Nombre de places libres :",parc.calculerNbrPlaceslibres())
+parc.sortirVoiture(voiture1)
+print("Nombre de places libres :",parc.calculerNbrPlaceslibres())
+
+
+
 
 
 
