@@ -25,6 +25,11 @@ class Parc:
             print("voiture non trouvee dans le parc.")
     def calculerNbrPlaceslibres(self):
         return self.capacite - len(self.liste_voitures)
+parc = Parc(1,"Montreal",3)
+voiture = Voiture("Toyota","BB111","Rouge")
+voiture = Voiture("Honda","AA222","Bleu")
+
+
 
 
 
