@@ -17,6 +17,15 @@ class Parc:
             print("voiture ajoutee au parc.")
         else:
             print("le parc est plein.")
+    def sortirVoiture(self,voiture):
+        if voiture in self.liste_voitures:
+            self.liste_voitures.remove(voiture)
+            print("voiture retiree du parc.")
+        else:
+            print("voiture non trouvee dans le parc.")
+
+
+
 
 
 
